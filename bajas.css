@@ -1,0 +1,399 @@
+html, body {
+  height:100%;
+}
+
+body {
+  background-color: white;
+  color: white;
+  font-family: Helvetica;
+}
+
+#navBar {
+	display: flex;
+  background-color: rgb(52, 120, 70);
+  flex-direction: row;
+  justify-content: space-evenly;
+	align-items: center;
+  height: 5vw;
+  font-size: 3vw;
+  color: white;
+}
+
+.navElement {
+  background-color: rgb(52, 120, 70);
+  height: 5vw;
+  align-items: center;
+  font-size: 3vw;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navElement:hover {
+  background-color: rgb(140, 224, 132);
+  opacity: 0.9;
+}
+
+#logo{
+  align-items: left;
+  height: 5vw;
+}
+
+#gallery{
+  background-color: rgb(140, 224, 132);
+}
+
+#extraMenu {
+  display: none;
+}
+
+#pageLabel {
+  display: none;
+}
+
+#menuLine {
+  width: 40px;
+  height: 4px;
+  border-radius: 5px;
+  background: white;
+  margin-bottom: 5px;"
+}
+
+.mainContent{
+	font-size: 1.5em;
+	color: #777;
+  padding-bottom: 1vw;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#filter {
+	padding: 1.5vw 1.5vw;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+  align-items: center;
+  background-color: white;
+  color: white;
+  font-size: 2vw;
+}
+
+.filterElement {
+  background-color: rgb(52, 120, 70);
+  height: 3vw;
+  align-items: center;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.filterElement:hover {
+  background-color: rgb(140, 224, 132);
+  opacity: 0.9;
+}
+
+#photos{
+  display: grid;
+  grid-template-columns: 5% 1fr 1fr 1fr 1fr 5%;
+	grid-template-rows: 22vw 22vw;
+  grid-gap: 10px;
+  padding-bottom: 1vw;
+}
+
+.photoLabel{
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.7vw;
+}
+
+.photos1{
+  background-color: rgb(52, 120, 70);
+  grid-column: 2;
+	grid-row: 1;
+
+}
+.photos2{
+  background-color: rgb(52, 120, 70);
+  grid-column: 3;
+	grid-row: 1;
+}
+
+.photos3{
+  background-color: rgb(52, 120, 70);
+  grid-column: 4;
+	grid-row: 1;
+
+}
+.photos4{
+  background-color: rgb(52, 120, 70);
+  grid-column: 5;
+	grid-row: 1;
+}
+
+.photos5{
+  background-color: rgb(52, 120, 70);
+  grid-column: 2;
+	grid-row: 2;
+
+}
+.photos6{
+  background-color: rgb(52, 120, 70);
+  grid-column: 3;
+	grid-row: 2;
+}
+
+.photos7{
+  background-color: rgb(52, 120, 70);
+  grid-column: 4;
+	grid-row: 2;
+
+}
+.photos8{
+  background-color: rgb(52, 120, 70);
+  grid-column: 5;
+	grid-row: 2;
+}
+
+.individualPhoto{
+  height:85%;
+  width: 90%;
+  padding-top: 3%;
+  padding-left: 5%;
+}
+
+#bottomBar {
+	display: flex;
+  background-color: rgb(52, 120, 70);
+  flex-direction: row;
+	align-items: center;
+  height: 3vw;
+  font-size: 1.3vw;
+  width: 100%;
+}
+
+#bajasLabel{
+  padding-left: 60vw;
+	align-items: right;
+}
+
+.logoIcons {
+  height: 2.8vw;
+  width: 2.8vw;
+  padding-top: .22vw;
+  padding-left: .5vw;
+  padding-bottom: .22vw;
+}
+
+/* tablet size!! */
+@media (max-width: 1024px) {
+
+  #photos{
+    display: grid;
+    grid-template-columns: 15% 1fr 1fr 15%;
+  	grid-template-rows: 30vw 30vw 30vw 30vw;
+    grid-gap: 10px;
+    padding-bottom: 3vw;
+  }
+
+  .photoLabel{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .photos1{
+    background-color: rgb(52, 120, 70);
+    grid-column: 2;
+  	grid-row: 1;
+  }
+
+  .photos2{
+    background-color: rgb(52, 120, 70);
+    grid-column: 3;
+  	grid-row: 1;
+  }
+
+  .photos3{
+    background-color: rgb(52, 120, 70);
+    grid-column: 2;
+  	grid-row: 2;
+
+  }
+  .photos4{
+    background-color: rgb(52, 120, 70);
+    grid-column: 3;
+  	grid-row: 2;
+  }
+
+  .photos5{
+    background-color: rgb(52, 120, 70);
+    grid-column: 2;
+  	grid-row: 3;
+
+  }
+  .photos6{
+    background-color: rgb(52, 120, 70);
+    grid-column: 3;
+  	grid-row: 3;
+  }
+
+  .photos7{
+    background-color: rgb(52, 120, 70);
+    grid-column: 2;
+  	grid-row: 4;
+
+  }
+  .photos8{
+    background-color: rgb(52, 120, 70);
+    grid-column: 3;
+  	grid-row: 4;
+  }
+
+  #bottomBar {
+    height: 5.5vw;
+    font-size: 2.3vw;
+    width: 100%;
+  }
+
+  .logoIcons {
+    height: 4.8vw;
+    width: 4.9vw;
+  }
+
+  #bajasLabel{
+    padding-left: 30vw;
+  	align-items: right;
+  }
+
+  #filter {
+  	padding: 2vw 2vw;
+  	display: flex;
+  	justify-content: center;
+  	flex-direction: row;
+    align-items: center;
+    background-color: white;
+    color: white;
+  }
+
+}
+
+
+/* smartphone size!! */
+@media (max-width: 600px){
+
+  #photos{
+    display: grid;
+    grid-template-columns: 15% 1fr 15%;
+  	grid-template-rows: 60vw 60vw 60vw 60vw 60vw 60vw 60vw 60vw;
+    grid-gap: 10px;
+    padding-top: 10px;
+  }
+
+
+  .photoLabel{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: .8em;
+  }
+
+  .photos1{
+    background-color: rgb(52, 120, 70);
+    grid-column: 2;
+  	grid-row: 1;
+
+  }
+  .photos2{
+    background-color: rgb(52, 120, 70);
+    grid-column: 2;
+  	grid-row: 2;
+  }
+
+  .photos3{
+    background-color: rgb(52, 120, 70);
+    grid-column: 2;
+  	grid-row: 3;
+
+  }
+  .photos4{
+    background-color: rgb(52, 120, 70);
+    grid-column: 2;
+  	grid-row: 4;
+  }
+
+  .photos5{
+    background-color: rgb(52, 120, 70);
+    grid-column: 2;
+  	grid-row: 5;
+
+  }
+  .photos6{
+    background-color: rgb(52, 120, 70);
+    grid-column: 2;
+  	grid-row: 6;
+  }
+
+  .photos7{
+    background-color: rgb(52, 120, 70);
+    grid-column: 2;
+  	grid-row: 7;
+
+  }
+  .photos8{
+    background-color: rgb(52, 120, 70);
+    grid-column: 2;
+  	grid-row: 8;
+  }
+
+  #bottomBar {
+    height: 8vw;
+    font-size: 3.3vw;
+    width: 100%;
+  }
+
+  .logoIcons {
+    height: 4.8vw;
+    width: 5.3vw;
+  }
+
+  #bajasLabel{
+    padding-left: 10vw;
+  }
+
+  #extraMenu {
+    display: flex;
+    flex-direction: column;
+    padding-right: 4vw;
+  }
+  #logo{
+    height: 8vw;
+    padding-left: 4vw;
+  }
+
+  #filter {
+    display: none;
+  }
+
+  #navBar {
+    justify-content: space-between;
+    height: 8vw;
+  }
+
+  .navElement {
+    display: none;
+  }
+
+  #pageLabel {
+    color: rgb(52, 120, 70);
+    display: block;
+    text-align: center;
+    font-size: 8vw;
+    padding-top: 10px;
+    /* padding-bottom: 10px; */
+    padding-left: 5px;
+    /* font-family: Helvetica-light; */
+    font-family: emoji;
+  }
+}
